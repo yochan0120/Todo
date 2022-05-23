@@ -39,7 +39,7 @@ public class TodoContoroller {
 		return "redirect:/";
 	}
 
-	// Derete
+	// Delete
 	@GetMapping("/delete/{id}")
 	public String deleteTodo(@PathVariable Long id) {
 		repository.deleteById(id); // 指定したidの値のレコードを削除する
